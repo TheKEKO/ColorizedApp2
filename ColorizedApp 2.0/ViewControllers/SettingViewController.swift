@@ -61,11 +61,11 @@ class SettingViewController: UIViewController {
         }
     }
 }
-    
+
 extension SettingViewController: UITextFieldDelegate {
     
     // MARK: - Private Methods
-    private func setColor() {
+    @objc private func setColor() {
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
