@@ -36,8 +36,8 @@ class SettingViewController: UIViewController {
         colorView.backgroundColor = viewColor
         
         setSliderColor()
-        setValue(for: redLabel, greenLabel, blueLabel)
-        setValueText(for: redTextField, greenTextField, blueTextField)
+        setValue(redLabel, greenLabel, blueLabel)
+        textFieldDidEndEditing(redTextField, greenTextField, blueTextField)
     }
     
     // MARK: IBActions
@@ -60,6 +60,9 @@ class SettingViewController: UIViewController {
             blueTextField.text = string(from: blueSlider)
         }
     }
+}
+    
+extension SettingViewController: UITextFieldDelegate {
     
     // MARK: - Private Methods
     private func setColor() {
@@ -78,7 +81,7 @@ class SettingViewController: UIViewController {
         blueSlider.value = Float(ciColor.blue)
     }
     
-    private func setValue(for labels: UILabel...) {
+    private func setValue(_ labels: UILabel...) {
         labels.forEach { label in
             switch label {
             case redLabel:
@@ -91,8 +94,8 @@ class SettingViewController: UIViewController {
         }
     }
     
-    private func setValueText(for textsTF: UITextField...) {
-        textsTF.forEach { textTF in
+    private func textFieldDidEndEditing(_ textField: UITextField...) {
+        textField.forEach { textTF in
             switch textTF  {
             case redTextField:
                 textTF.text = string(from: redSlider)

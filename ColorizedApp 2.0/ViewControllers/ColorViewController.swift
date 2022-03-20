@@ -24,6 +24,5 @@ extension ColorViewController: SettingViewControllerDelegate {
     func setColorView(for colorValue: UIColor) {
         view.backgroundColor = colorValue
     }
-    
 }
 
