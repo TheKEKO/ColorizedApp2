@@ -42,7 +42,7 @@ class SettingViewController: UIViewController {
     
     // MARK: IBActions
     @IBAction func doneButtonPressed() {
-        delegate.setColorView(for: colorView.backgroundColor ?? .white)
+        delegate.setColorView(_ : colorView.backgroundColor ?? .white)
         dismiss(animated: true)
     }
     
