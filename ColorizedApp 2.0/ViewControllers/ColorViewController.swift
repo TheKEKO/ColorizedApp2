@@ -8,21 +8,22 @@
 import UIKit
 
 protocol SettingViewControllerDelegate {
-    func setColorView(_ colorValue: UIColor)
+    func setColor(_ color: UIColor)
 }
 
 class ColorViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let settingVC = segue.destination as? SettingViewController else { return }
-        settingVC.viewColor = view.backgroundColor
         settingVC.delegate = self
+        settingVC.viewColor = view.backgroundColor
     }
 }
 
+// MARK: - ColorDelegate
 extension ColorViewController: SettingViewControllerDelegate {
-    func setColorView(_ colorValue: UIColor) {
-        view.backgroundColor = colorValue
+    func setColor(_ color: UIColor) {
+        view.backgroundColor = color
     }
 }
 

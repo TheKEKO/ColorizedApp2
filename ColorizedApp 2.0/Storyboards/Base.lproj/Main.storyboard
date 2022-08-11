@@ -81,19 +81,19 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="CDS-UR-HHO">
                                         <rect key="frame" x="90" y="1" width="195" height="114"/>
                                         <subviews>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bzg-IE-NPz">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.050000000745058101" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bzg-IE-NPz">
                                                 <rect key="frame" x="-2" y="0.0" width="199" height="31"/>
                                                 <connections>
                                                     <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Bb9-hS-7Vc"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zfF-dg-3NG">
+                                            <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.26600000262260398" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zfF-dg-3NG">
                                                 <rect key="frame" x="-2" y="42" width="199" height="31"/>
                                                 <connections>
                                                     <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Azu-BO-YEo"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mOC-Mj-9RM">
+                                            <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.49399998784065202" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mOC-Mj-9RM">
                                                 <rect key="frame" x="-2" y="84" width="199" height="31"/>
                                                 <connections>
                                                     <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="afP-qF-Wb8"/>
@@ -107,17 +107,17 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBR-iC-6Gq">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qBd-2i-OjS">
                                                 <rect key="frame" x="0.0" y="41" width="50" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="309-L6-rxc">
                                                 <rect key="frame" x="0.0" y="82" width="50" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -139,7 +139,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HDI-om-vTj"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.1176470518" green="0.2941176593" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="zoY-aC-quP" firstAttribute="centerX" secondItem="WGU-Uj-Bwk" secondAttribute="centerX" id="2gX-cv-0PN"/>
                             <constraint firstItem="yBo-aK-mKa" firstAttribute="top" secondItem="HDI-om-vTj" secondAttribute="top" constant="34" id="Ahi-Dr-z9u"/>
@@ -166,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1882.5" y="95.070422535211264"/>
+            <point key="canvasLocation" x="1926" y="98"/>
         </scene>
         <!--Color View Controller-->
         <scene sceneID="bIy-xA-o0V">
@@ -184,7 +184,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="piw-rv-eOK"/>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ohp-rF-9aa" firstAttribute="centerX" secondItem="9Vb-qN-acy" secondAttribute="centerX" id="8eI-0h-y03"/>
                             <constraint firstItem="Ohp-rF-9aa" firstAttribute="centerY" secondItem="9Vb-qN-acy" secondAttribute="centerY" id="9Ks-tK-xOQ"/>
@@ -201,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SzQ-cc-DfZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1114" y="97"/>
+            <point key="canvasLocation" x="1137" y="98"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LBm-gj-GqU">
