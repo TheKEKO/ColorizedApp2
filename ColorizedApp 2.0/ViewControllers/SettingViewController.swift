@@ -107,7 +107,7 @@ extension SettingViewController {
         greenSlider.value = Float(ciColor.green)
         blueSlider.value = Float(ciColor.blue)
     }
-
+    
     private func string(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
     }
